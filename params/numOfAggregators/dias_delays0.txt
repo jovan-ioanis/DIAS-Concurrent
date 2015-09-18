@@ -1,0 +1,52 @@
+# Simulation Parameters
+Runtime [ms]=500000
+Number of nodes=400
+
+# Peer sampling Service Parameters
+View length=25
+Healing parameter=0
+Swap parameter=25
+View propagation policy=PUSH-PULL
+Peer selection policy=RAND
+PSS Communication period [ms]=250
+Age increment [ms]=1000
+Bootstrap time [ms]=6000
+
+# DIAS Service Parameterization
+DIAS Communication period [ms]=1000
+Sampling period [ms]=250
+Sampling size=15
+Number of sessions=10
+Unexploited buffer size=15
+Outdated buffer size=15
+Exploited buffer size=15
+Aggregation strategy=EXPLOITATION
+AMS type=COUNTING
+AMS hashing type=DOUBLE_HASH
+AMS bits number=16
+AMS hash functions number=24
+DMA type=DOUBLE_HASH
+DMA bits number=16
+DMA hash function number=24
+AMD type=DOUBLE_HASH
+AMD bits number=16
+AMD hash function number=24
+SMA type=DOUBLE_HASH
+SMA bits number=16
+SMA hash function number=24
+
+# DIAS application Parameterization
+Aggregation type=ARITHMETIC
+Application bootstrap time=15000
+Aggregation period [ms]=500000
+Number of possible states=5
+Minimal input value=0.0
+Maximal input value=1.0
+Time transition probability=1.0
+Parameter transition probability=1.0
+State transitions period [ms]=200000
+Generation scheme=BETA
+Selection scheme=CYCLICAL
+
+Active aggregator number=20
+Active disseminator number=400
